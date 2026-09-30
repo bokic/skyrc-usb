@@ -1,0 +1,4 @@
+# SkyRC USB HID Chargers (e.g. B6 Mini, B6 AC, etc.)
+# VID: 0000, PID: 0001
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0000", ATTRS{idProduct}=="0001", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0000", ATTRS{idProduct}=="0001", MODE="0666", TAG+="uaccess"
